@@ -1,9 +1,27 @@
-<nav>
-    <ul>
-      <li><a routerLink="/" routerLinkActive="active">Home</a></li>
-      <li><a routerLink="/services" routerLinkActive="active">Services</a></li>
-      <li><a routerLink="/contactus" routerLinkActive="active">Contact Us</a></li>
-      <li><a routerLink="/about" routerLinkActive="active">About</a></li>
-    </ul>
-  </nav>
-  
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">Cutmap</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="services">services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="about">about</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contactus">contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="signup">signup</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="login">login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
